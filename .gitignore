@@ -1,0 +1,14 @@
+# Ignorar node_modules (paquetes de instalación)
+node_modules/
+
+# Ignorar dependencias de Netlify
+.netlify/
+
+# Ignorar archivos de entorno (credenciales)
+.env
+.env.local
+
+# Ignorar archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
