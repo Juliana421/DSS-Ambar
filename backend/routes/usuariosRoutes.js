@@ -1,9 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/usuariosController.js");
+const controller = require("../controllers/usuariosControllers.js");
 
+// Rutas para usuarios
 router.get("/", controller.getUsuarios);
-router.post("/", controller.createUsuario);
+router.post("/", controller.createUsuario); // Registro
+router.post("/login", controller.loginUsuario); // Login
 router.put("/:id", controller.updateUsuario);
 router.delete("/:id", controller.deleteUsuario);
 

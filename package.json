@@ -1,0 +1,19 @@
+{
+  "name": "ambar-accesorios",
+  "version": "1.0.0",
+  "description": "Tienda online de accesorios",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
+    "build": "mkdir -p netlify/functions && cp -r backend netlify/functions/api"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "serverless-http": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
